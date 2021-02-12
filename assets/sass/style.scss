@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body{
+    margin: 0;
+    height:80vh;
+}
+.section{
+    border: #A1CAE2 solid 1px ;
+    height: 89vh;
+    width: 25vw;
+    margin: 25px auto;
+    background-color: #D1EBFE;
+    font-family: 'Oswald', sans-serif;
+    &-head{
+        padding-left: 3%;
+    }
+    &-label{
+        font-size:.8em;
+    }
+    &-form{
+        border-bottom:  #fff solid 5px;
+        padding-bottom: 5%;
+        padding-left: 0;
+    }
+    &-stern{
+        color:red;
+    }
+    &-num{
+        width: 20%;
+        padding:7px 0;
+        margin-left: 3%;
+        border: #D1EBFE solid 1px ;
+        border-radius:3px;
+        margin-bottom: 3%;
+        color: #034577;
+    }
+    &-div{
+        background:#fff;
+        height: 13vh;
+    .berechnen{
+        background-color: #23689B;
+        width:23vw;
+        color: #fff;
+        border: #23689B solid 1px;
+        margin-left: 3%;
+        padding:5px 0;
+        border-radius:3px;
+        margin-top: 5%;
+    }
+    .para{
+        @extend .section-label;
+        padding-left: 3%;
+        color: #1a5079;
+        padding-top: 4%;
+        border-top: #677179 solid 2px;
+        border-bottom:  #fff solid 5px;
+    }
+}
+    .aside{
+    &-preis{
+        padding-left: 3%;
+        color: #034577;
+    }
+    &-divBg{
+        background:#fff;
+        height:20px;
+    }
+    &-head{
+        @extend .section-head;
+        border-top:  #fff solid 5px;
+        padding-top:5%
+    }
+    }
+}

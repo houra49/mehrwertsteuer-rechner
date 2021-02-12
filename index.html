@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <h4 class="section-head">Was soll berechnet werden?</h4>
+        <form action="" class="section-form">
+            <input type="radio" name="" id="netto" onchange="rechner()">
+            <label for="" class="section-label">Mehrwertsteuer aufschlagen(Netto zu Brutto)</label>
+            <br><input type="radio" name="" id="brutto">
+            <label for="" class="section-label">Mehrwertsteuer abziehen(Brutto zu Netto)</label>
+        </form>
+        <h4 class="section-head">Mehrwertsteuersatz</h4>
+        <form action="" class="section-form">
+            <input type="radio" name="" id="neunzehn" onchange="rechner()">
+            <label for="" class="section-label">19%</label>
+            <input type="radio" name="" id="sieben" onchange="rechner()">
+            <label for="" class="section-label">7%</label>
+        </form>
+        <h4 class="section-head" id="nettoBetrag">Nettobetrag(Preis ohne Mehrwertsteuer) in Euro <span
+                class="section-stern">*</span>
+        </h4>
+        <input type="text" name="" id="zahl" class="section-num" value="">
+        <div class="section-div">
+            <input type="button" value="BERECHNEN" class="berechnen" id="berechnen" onclick="rechner()">
+            <p class="para">Ergebnis</p>
+        </div>
+        <aside class="aside">
+            <h4 class="section-head">Mehrwertsteuerbetrag</h4>
+            <p class="aside-preis" id="nettoErgebnis"> €</p>
+            <h4 class="aside-head" id="bruttoBetrag">Bruttobetrag(Endpreis)</h4>
+            <p class="aside-preis" id="bruttoErgebnis"> €</p>
+            <div class="aside-divBg"></div>
+        </aside>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
